@@ -1,48 +1,42 @@
-table {
-  font-family: "Arial Black", Gadget, sans-serif;
-  border: 2px solid #000000;
-  background-color: #4A4A4A;
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  border-collapse: collapse;
-}
-table td, table th {
-  border: 1px solid #4A4A4A;
-  padding: 3px 2px;
-}
-table tbody td {
-  font-size: 13px;
-  color: #E6E6E6;
-}
-table tr:nth-child(even) {
-  background: #888888;
-}
-table thead {
-  background: #000000;
-  border-bottom: 3px solid #000000;
-}
-table thead th {
-  font-size: 15px;
-  font-weight: bold;
-  color: #E6E6E6;
-  text-align: center;
-  border-left: 2px solid #4A4A4A;
-}
-table thead th:first-child {
-  border-left: none;
+@import url('https://fonts.maateen.me/bangla/font.css');
+* {
+  font-family: 'Bangla', sans-serif;
 }
 
-table tfoot {
-  font-size: 12px;
-  font-weight: bold;
-  color: #E6E6E6;
-  background: #000000;
-  background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-  background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-  background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
-  border-top: 1px solid #4A4A4A;
+.google-visualization-table-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-table tfoot td {
-  font-size: 12px;
+
+.google-visualization-table-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.google-visualization-table-table th,
+.google-visualization-table-table td {
+  padding: 12px 15px;
+}
+
+.google-visualization-table-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.google-visualization-table-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.google-visualization-table-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.google-visualization-table-table tbody tr:hover {
+  background:#1e8a714d;
 }
